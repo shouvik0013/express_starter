@@ -14,7 +14,9 @@ app.use((req, res, next) => {
     res.send('<h2>Response from the server</h2>')
 })
 
-const server = http.createServer(app);  // app is also a valid request handler
+// const server = http.createServer(app);  // app is also a valid request handler
 
 
-server.listen(3000);
+// server.listen(3000);
+
+app.listen(3000);
