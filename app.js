@@ -11,6 +11,7 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
     console.log('Second middleware');
+    res.send('<h2>Response from the server</h2>')
 })
 
 const server = http.createServer(app);  // app is also a valid request handler
